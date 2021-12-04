@@ -1,13 +1,9 @@
 <template>
 <div id="app">
   <div class="header">
-    <router-link to="/">
-      <div class="logo">
-        <img src="/ordinary.png">
-      </div>
-    </router-link>
+
     <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+      <h1>A Collection of Ideas That are Weird but are Commmon</h1>
     </div>
   </div>
   <div class="content">
@@ -15,6 +11,10 @@
   </div>
   <div class="footer">
     <router-link to="/admin">Admin</router-link>
+    <hr>
+
+    <a href="https://github.com/benjamingiles/CreativeProject4">Github</a>
+    <p>Made by Ben Giles and Alec Davis</p>
   </div>
 </div>
 </template>
@@ -34,10 +34,14 @@ body {
 
 /* Header */
 .header {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
   display: flex;
   padding: 10px 100px 0px 100px;
   background-color: #5BDEFF;
-  color: #1C454F;
+  color: #2c2c2c;
 }
 
 .title {
@@ -55,8 +59,15 @@ body {
 
 /* Footer */
 .footer {
-  height: 50px;
-  padding: 20px 100px 0px 100px;
+  justify-content: center;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  max-width: 1000px;
+  min-height: 50px;
+  padding: 20px 100px 1px 100px;
   background: #e3e3e3;
   font-size: 12px;
 }

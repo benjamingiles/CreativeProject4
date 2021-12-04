@@ -130,6 +130,12 @@ export default {
 </script>
 
 <style scoped>
+.admin {
+  color: #2c2c2c;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .image h2 {
   font-style: italic;
   font-size: 1em;
