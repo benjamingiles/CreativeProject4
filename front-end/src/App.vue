@@ -43,8 +43,8 @@ body {
   max-width: 1000px;
   display: flex;
   padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
-  color: #2c2c2c;
+  background-color: green;
+  color: white;
 }
 
 .title {
