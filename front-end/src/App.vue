@@ -10,10 +10,13 @@
     <router-view />
   </div>
   <div class="footer">
-    <router-link to="/admin">Admin</router-link>
-    <hr>
+    <router-link to="/">Home</router-link>
+    <p>
+      <router-link to="/admin">Upload Ideas</router-link>
+    <p>
+      <hr>
 
-    <a href="https://github.com/benjamingiles/CreativeProject4">Github</a>
+      <a href="https://github.com/benjamingiles/CreativeProject4">Github</a>
     <p>Made by Ben Giles and Alec Davis</p>
   </div>
 </div>

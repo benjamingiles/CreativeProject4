@@ -38,9 +38,6 @@
       <button @click="editItem(findItem)">Edit</button>
     </div>
   </div>
-  <div class="heading">
-    <h2><a href="./Home.vue">Home</a></h2>
-  </div>
 </div>
 </template>
 
