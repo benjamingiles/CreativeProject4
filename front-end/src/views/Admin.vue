@@ -2,7 +2,6 @@
 <div class="admin">
   <h1>The Admin Page!</h1>
   <div class="heading">
-    <div class="circle">1</div>
     <h2>Add an Item</h2>
   </div>
   <div class="add">
@@ -11,17 +10,14 @@
       <p></p>
       <input v-model="description" placeholder="Description">
       <p></p>
-      <input type="file" name="photo" @change="fileChanged">
       <button @click="upload">Upload</button>
     </div>
     <div class="upload" v-if="addItem">
       <h2>{{addItem.title}}</h2>
       <p>{{addItem.description}}</p>
-      <img :src="addItem.path" />
     </div>
   </div>
   <div class="heading">
-    <div class="circle">2</div>
     <h2>Edit/Delete an Item</h2>
   </div>
   <div class="edit">
@@ -36,12 +32,14 @@
       <input v-model="findItem.title">
       <input v-model="findItem.description">
       <p></p>
-      <img :src="findItem.path" />
     </div>
     <div class="actions" v-if="findItem">
       <button @click="deleteItem(findItem)">Delete</button>
       <button @click="editItem(findItem)">Edit</button>
     </div>
+  </div>
+  <div class="heading">
+    <h2><a href="./Home.vue">Home</a></h2>
   </div>
 </div>
 </template>
@@ -112,13 +110,9 @@ export default {
     },
     async upload() {
       try {
-        const formData = new FormData();
-        formData.append('photo', this.file, this.file.name)
-        let r1 = await axios.post('/api/photos', formData);
         let r2 = await axios.post('/api/items', {
           title: this.title,
           description: this.description,
-          path: r1.data.path
         });
         this.addItem = r2.data;
       } catch (error) {
@@ -136,6 +130,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
+
 .image h2 {
   font-style: italic;
   font-size: 1em;
