@@ -1,8 +1,8 @@
 <template>
 <div class="admin">
-  <h1>The Admin Page!</h1>
+  <h1>Upload your ideas here!</h1>
   <div class="heading">
-    <h2>Add an Item</h2>
+    <h2>Add an Idea</h2>
   </div>
   <div class="add">
     <div class="form">
@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="heading">
-    <h2>Edit/Delete an Item</h2>
+    <h2>Edit/Delete an Idea</h2>
   </div>
   <div class="edit">
     <div class="form">
