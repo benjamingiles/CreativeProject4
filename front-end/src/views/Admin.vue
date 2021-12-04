@@ -1,6 +1,6 @@
 <template>
 <div class="admin">
-  <h1>The Admin Page!</h1>
+  <h1>Add your idea here!</h1>
   <div class="heading">
     <h2>Add an Item</h2>
   </div>
@@ -37,9 +37,6 @@
       <button @click="deleteItem(findItem)">Delete</button>
       <button @click="editItem(findItem)">Edit</button>
     </div>
-  </div>
-  <div class="heading">
-    <h2><a href="./Home.vue">Home</a></h2>
   </div>
 </div>
 </template>
